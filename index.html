@@ -14,12 +14,13 @@
 <body>
     <header id="header">
         <div class="logo">
-            <p><i class="fa fa-book-open"></i><a>main</a> / Getting Started / Front-end developer proje...</p>
+            <p><span><i class="fa fa-book-open"></i></span><a>main</a> / Getting Started / Front-end developer proje...</p>
 
         </div>
         <nav id="nav-bar">
             <ul>
-                <li><i class="fa-thin fa-lock"></i><a href="#" class="nav-link">Editing</a></li>
+                <li><i style="margin-right: 5px;" class="fa fa-lock"></i><a href="#" class="nav-link">Editing</a></li>
+                <li><a href="#" style="color: grey" class="nav-link"> | </a></li>
                 <li><a href="#" class="nav-link">Publish Space</a></li>
             </ul>
         </nav>
@@ -28,14 +29,21 @@
 
     <div class="main-body">
         <div class="body-text">
+            <div class="sub-elements">
+                <p><span id="custom-p">P </span><span> | <i class="fas fa-clock"></i> 0min </span><span>| <i class="fa fa-circle"></i> |</span><span><i class="fas fa-down-arrow"></i></span></p>
+                <ul class="bar-link-boss">
+                    <li><a href="#" class="bar-link"><i class="fa fa-circle"></i></a></li>
+                    <li><a href="#" class="bar-link"><i class="fa fa-cloud"></i></a></li>
+                    <li><a href="#" class="bar-link"><i class="fa fa-ellipsis-v"></i></a></li>
+                </ul>
+            </div>
             <h1>Front-end developer test project</h1>
+            <hr>
             <p>Your goal is to make a page that looks exactly like this one , and has the ability to create H1 text simply by typing 
                 / then 1, then hitting ENTER.
             </p>
             <div class="input-text">
-                <form>
-                    <input class="convert" type="text" placeholder="Type / for blocks, @ to link docs or people">
-                </form>
+                    <input id="myInput" type="text" placeholder="Type / for blocks, @ to link docs or people">
             </div>
         </div>
         
